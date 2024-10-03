@@ -1,0 +1,164 @@
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.993), rgba(244, 243, 243, 0.514)), url("breakfast-tabel.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Menu Container */
+.menu {
+    margin: 3.5rem;
+    background: rgba(255, 255, 255, 0.618); /* Added background transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(154, 154, 154, 0.1);
+    animation: fadeIn 2s ease-in; /* Added animation */
+}
+
+.menu h2 {
+    font-size: 40px;
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(85, 84, 84);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Added text shadow */
+}
+
+/* After Effect for H2 */
+.menu h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: rgb(51, 51, 51);
+    margin: 10px auto;
+}
+
+/* Menu Buttons */
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 15px;
+}
+
+.menu-buttons button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ffffffb7;
+    color: rgb(85, 84, 84);
+    border: 1px solid #bab9b9;
+    cursor: pointer;
+    transition: all 300ms ease;
+    border-radius: 5px;
+    font-style: italic;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-buttons button:hover {
+    background-color: #9d9c9c;
+    color: #ffffff;
+    transform: scale(1.05); 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Main Menu */
+.main-menu {
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+/* Menu Item Styling */
+.menu-item {
+    display: flex;
+    width: 45%;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 0.5px solid #c8c8c8;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    align-items: center;
+    transition: transform 0.3s ease; /* Added transition */
+}
+
+.menu-item:hover {
+    transform: translateY(-10px); /* Menu items will lift when hovered */
+}
+
+.menu-item img {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    margin-right: 20px;
+    display: block;
+    border-radius: 5px;
+}
+
+/* Menu Text Styling */
+.menu-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-text h4 {
+    margin: 0;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 5px;
+    border-bottom: 2px dotted #7d7d7d;
+    padding-bottom: 5px;
+}
+
+.menu-text h4 span {
+    color: #2b8a3e; 
+    font-weight: bold;
+}
+
+.menu-text p {
+    margin: 0;
+    color: #202020;
+    font-size: 14px;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* Menu Item Styling */
+.menu-item a img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+    display: block;
+    border-radius: 5px;
+    transition: transform 0.3s ease; 
+}
+
+.menu-item a:hover img {
+    transform: scale(1.05); 
+}
+
